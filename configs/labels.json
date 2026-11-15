@@ -1,0 +1,31 @@
+{
+ "version": 1,
+ "source": "notes/MAJOR_v1.md section 6 (Step 2 design, approved)",
+ "size": 224,
+ "targets": {
+  "sigma_px_224": 2.0,
+  "q_void": 0.05,
+  "q_floor": 1e-6,
+  "w_norm_px_224": 100.0,
+  "w_norm_note": "scale factor, never a cap; rule = max train opening at 224 (93.1875 px over 3,823,136 rows, zone_diagnostics Stage A) rounded up to 10 px; training refuses null",
+  "dedup_key": ["x", "y", "theta_canonical", "opening"],
+  "theta_canonical": "(-90, 90]",
+  "owner": "largest Gaussian weight (nearest centre); tie -> lowest row of the sorted dedup array"
+ },
+ "decode": {"smoothing": "none", "tie": "first row-major", "jaw_rule": "opening/2", "angle_eps": 1e-6},
+ "match": {
+  "primary": {"angle_max_deg": 30, "iou_min_exclusive": 0.25},
+  "strict": {"angle_max_deg": 15, "iou_min_exclusive": 0.40}
+ },
+ "zones": {
+  "candidates": ["Z-end4", "Z-end3", "Z-band"],
+  "band_px_224": 2.0,
+  "g_theta": "coverage-weighted over the union of both in-frame zones",
+  "empty_min_area_cells": 0.5,
+  "g0_segments": 64,
+  "selected": null,
+  "selected_note": "frozen after Stage B (RULES R7: A0 seed 1 clean top-1 on val, real placement generator), before any Module 2 run",
+  "provisional": "Z-end3",
+  "provisional_note": "chosen from training geometry before any model outcome (Stage A, notes/MAJOR_v1.md section 11); NOT usable by analysis code: data.zones.selected_zone raises while selected is null"
+ }
+}

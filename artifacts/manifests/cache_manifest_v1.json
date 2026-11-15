@@ -1,0 +1,181 @@
+{
+ "version": 1,
+ "splits": [
+  "train",
+  "val"
+ ],
+ "n_files": 34,
+ "total_bytes": 53776206782,
+ "files": [
+  {
+   "path": "train/COMPLETE",
+   "bytes": 20,
+   "sha256": "19bf332249ca728954f33ea0e5cd74f39cdb6e87e74bc7e187fde229615570b0"
+  },
+  {
+   "path": "train/ds.npy",
+   "bytes": 8285061248,
+   "sha256": "69ce177f0e5a70b50771a9c5779ed52bdd2714f611c50cbdba0bb4aa58299bbb"
+  },
+  {
+   "path": "train/ds_comp.npy",
+   "bytes": 8285061248,
+   "sha256": "6aa94b31280ef76d72335da605e83107dee111ad342d0dc91bb7945f0532b7b8"
+  },
+  {
+   "path": "train/dstar.npy",
+   "bytes": 8285061248,
+   "sha256": "77ecc0bce1dc841f312ccf2086d4489bb53965e4623787c46462ad5f978f9eb2"
+  },
+  {
+   "path": "train/grasp_offsets.npy",
+   "bytes": 330376,
+   "sha256": "260e2d4f383d35f75323236f3ccee0e359e7505f7884db3afc00a1d3578a66c2"
+  },
+  {
+   "path": "train/grasps_1024.npy",
+   "bytes": 152925568,
+   "sha256": "253c2c53b5554d37a61301ab695ca9ca02efb1bcbd7f565c7ead8b4e32584119"
+  },
+  {
+   "path": "train/index.csv",
+   "bytes": 6913107,
+   "sha256": "549980c054c63cb78443b8deef8e8a352587c61297d578eaf290ad63bde3bf98"
+  },
+  {
+   "path": "train/lie_any_t12.npy",
+   "bytes": 2071265408,
+   "sha256": "5936c6f57f8ce8d8a4116a27e793a26336be3218218aaeea19592e85d374571e"
+  },
+  {
+   "path": "train/lie_any_t24.npy",
+   "bytes": 2071265408,
+   "sha256": "6b96b8f74fda8a32b98c8e6589f49228528641de28ef5690bee14ffd4a207cc4"
+  },
+  {
+   "path": "train/lie_any_t6.npy",
+   "bytes": 2071265408,
+   "sha256": "b91bf7eb8cb6870a138643a2d355687c5556e20ae12f0cfe520fa8a58042d2d6"
+  },
+  {
+   "path": "train/lie_fraction_t12.npy",
+   "bytes": 2071265408,
+   "sha256": "7015e56301537bf1fdeaf9d306ab09dd9f5ae4afba2fea833bffbfabb44d9c1a"
+  },
+  {
+   "path": "train/lie_fraction_t24.npy",
+   "bytes": 2071265408,
+   "sha256": "9614912551d52c2bc6c0aafb0aed37cb97fbe2bbe39f425d46a5e2cb2f916d2b"
+  },
+  {
+   "path": "train/lie_fraction_t6.npy",
+   "bytes": 2071265408,
+   "sha256": "b5f5321d561d3ed348edd01a5b5279b3f0d47b598a29ced4a1f9f747983afe51"
+  },
+  {
+   "path": "train/m_sensor.npy",
+   "bytes": 2071265408,
+   "sha256": "6c38aec7922da9505a29dc6176177c8fc43fc6a8986df0fbf90364e85ba50c7a"
+  },
+  {
+   "path": "train/obj.npy",
+   "bytes": 2071265408,
+   "sha256": "68820613199f4f6af0efa84cef274e1c38a4f41575253636bcf1ecaa25274e5d"
+  },
+  {
+   "path": "train/rgb.npy",
+   "bytes": 6213795968,
+   "sha256": "28c2ecdfa4cdd6e458cb4f307aaff06f1f1b9839bf525a5d99435c97ff09a732"
+  },
+  {
+   "path": "train/summary.json",
+   "bytes": 4937,
+   "sha256": "33c3ed9af7d8c32cda6abc6d16f590edcfed69b8c98c558d867ea6e6f5ce4638"
+  },
+  {
+   "path": "val/COMPLETE",
+   "bytes": 20,
+   "sha256": "f32169b03a489226f4317fb8981c15d56075ce760f8df2a56700525e67b3ba46"
+  },
+  {
+   "path": "val/ds.npy",
+   "bytes": 1036034176,
+   "sha256": "93b3e3a41163a6d499d3e529a2ae4beec5a1c34214df323c9776b5395c282c79"
+  },
+  {
+   "path": "val/ds_comp.npy",
+   "bytes": 1036034176,
+   "sha256": "1c5f473c5c4f88f280119fdcfdbe3dd97d6231261179be39c9462f75ad2fe876"
+  },
+  {
+   "path": "val/dstar.npy",
+   "bytes": 1036034176,
+   "sha256": "0e5256aeaf1c617e5db24386c66b72021e98d81afb58397f18fbff90aafebb70"
+  },
+  {
+   "path": "val/grasp_offsets.npy",
+   "bytes": 41432,
+   "sha256": "8654e53a4d59bccbe5fa9c97a9eab68e3cc95b4d0a48fcd6ca853010763ddc97"
+  },
+  {
+   "path": "val/grasps_1024.npy",
+   "bytes": 18828528,
+   "sha256": "01b1dec61be19fccaeace97e80a1fd67cdf9376c08393db2ac7a43be55b90ff3"
+  },
+  {
+   "path": "val/index.csv",
+   "bytes": 860365,
+   "sha256": "3654d31dda0a29669ecbbae555da0854a10478ca7e0a23bf370db46965f1fbd3"
+  },
+  {
+   "path": "val/lie_any_t12.npy",
+   "bytes": 259008640,
+   "sha256": "472329501fe39b64d688fc51b52229c9d809ce44b34f9717a0e8f8191f481873"
+  },
+  {
+   "path": "val/lie_any_t24.npy",
+   "bytes": 259008640,
+   "sha256": "547a127b69af0290cc815687053c7fdf8b761e26fa6bde0f18eceb55dd11c97b"
+  },
+  {
+   "path": "val/lie_any_t6.npy",
+   "bytes": 259008640,
+   "sha256": "b23782c5c522bbbed1fff7ea1ab3e2d3853be3e6fa9f3b7ec281b74b78a0970c"
+  },
+  {
+   "path": "val/lie_fraction_t12.npy",
+   "bytes": 259008640,
+   "sha256": "b9f2ab1dd096186fc3d5895c9bfc48cab6dce398d1e6de8f2cb7744079dafdc0"
+  },
+  {
+   "path": "val/lie_fraction_t24.npy",
+   "bytes": 259008640,
+   "sha256": "06271c93344e00ffd710d58273240b0050ff4d7d07be99674c6417ca1b63e0b4"
+  },
+  {
+   "path": "val/lie_fraction_t6.npy",
+   "bytes": 259008640,
+   "sha256": "00eefd049d0b10e6b98ca943a52e0bf0af474e77cc478c7aa7d4790a47f12639"
+  },
+  {
+   "path": "val/m_sensor.npy",
+   "bytes": 259008640,
+   "sha256": "bbc12bc04857df4aa969810bae4e723a1d2b1a826cca0d9cbf756a63b826ca8f"
+  },
+  {
+   "path": "val/obj.npy",
+   "bytes": 259008640,
+   "sha256": "14bbfd9bdbd0a0c831577f4cf2817dc081eefce48fc7ee5cd4fe4d221bee3b2e"
+  },
+  {
+   "path": "val/rgb.npy",
+   "bytes": 777025664,
+   "sha256": "002c3920f9f8f81e3173326131c62f71e07a759187bc666a13bd4a46afaafd46"
+  },
+  {
+   "path": "val/summary.json",
+   "bytes": 2141,
+   "sha256": "17bf053aab2f938c60bc0e8af0ea0c60484e462666020e699c574a8b9c4a8c31"
+  }
+ ]
+}

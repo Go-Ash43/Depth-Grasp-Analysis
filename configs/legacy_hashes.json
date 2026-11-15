@@ -1,0 +1,7 @@
+{
+ "about": "Bridge for data.provenance.config_matches: {file name: {pre-cleanup file sha256 recorded by the cache / runs: content_sha256 of the file}}. Only provenance keys (created, frozen_on, date, source, audit_dir, manifest, *_note) were changed; tests/test_config_bridge.py re-checks every entry.",
+ "splits.json": {"dfad463ceb1f810bddde82b2ef1c88e44ec98cdbd18f97182f9ba47cadf412e8": "c16a64130b007d742d7a9a8646234e96acd4ce6c1248fa884df1e16271d4b6d7"},
+ "labels.json": {"1d18b1684dda6e0620f7de68e7cf18d00c0a14b2a2e39a17303bd03b16f3b9b8": "6ff661d5627b2e598df14d3ed99e17ca831184917b057e07d9e07f8322153442"},
+ "train_data.json": {"ad167b9e1848e474aaa935cde4d442fea66dc7135fc250819b02b3664bca7d3f": "6d6a10aec58c953a03ed3e2d4e6661f8889a940d2f1510efc1cfba79b93539b8"},
+ "frozen_day1.json": {"1fd573fbd05e08cb596336fa9aff9d0855de115877497150c543f1cc46bd523d": "0c9cfa881c570a4064fa04c8549d838bda621e870d2643fb8b5fa5f1d2677588"}
+}

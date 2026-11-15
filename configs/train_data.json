@@ -1,0 +1,29 @@
+{
+ "version": 1,
+ "source": "docs/proj_v3.md section 2 (D1-D4 as amended by review; approved)",
+ "holes": {
+  "p_clean": 0.25,
+  "severities": {"low": 0.05, "mid": 0.15, "high": 0.30},
+  "budget_definition": "new hole cells on the object (M_synth & obj, M_sensor excluded) / object cells at 224",
+  "budget_tol": 0.10,
+  "n_ellipses": [1, 3],
+  "aspect": [1.0, 3.0],
+  "centre_on": "object cells with M_sensor = 0 (no lie mask: placement never looks at M_lie)",
+  "lie_rule": "cover, never reject or clip: lie cells inside an ellipse become part of M_synth (flagged and completed). Deviation from SPEC_hypotheses M_synth row, recorded in docs/proj_v3.md and notes/holes_decision_v1.md",
+  "covered_lie_mask": "lie_any_t12",
+  "covered_lie_note": "per sample, covered_lie_frac = lie_any@12 cells in M_synth / M_synth cells, carried in every batch next to hole_frac",
+  "min_valid_obj_frac": 0.5,
+  "max_tries_per_ellipse": 50
+ },
+ "augment": {
+  "train": "none",
+  "flip_axis": null,
+  "flip_axis_note": "no augmentation (no-augmentation decision): the shadow-side statistic found no consistent stereo baseline side, so no flip is known to be safe; deviation from GR-ConvNet. Revisit only if overfit-20 or the validation curves show clear overfitting. With flip_axis null, augment=True is refused.",
+  "angle_rule": "theta -> -theta (sin 2theta negated, cos 2theta kept) for either flip"
+ },
+ "rgb_norm": {"mean": 0.5, "std": 0.25, "rule": "(rgb / 255 - mean) / std, fixed constant (D3)"},
+ "depth_norm": "configs/frozen_day1.json normalisation: ds_comp_mm for R/A0/M, dstar_mm for A*",
+ "oracle_tau_mm": 12.0,
+ "corruption_seed": 20261112,
+ "corruption_seed_note": "validation / test holes are keyed by this seed with epoch 0, never by the run seed"
+}

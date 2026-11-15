@@ -1,0 +1,31 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.tiff
+*.png
+runs/
+cache/
+wandb/
+.ipynb_checkpoints/
+scratch_out/
+.claude/
+AGENTS.md
+CLAUDE.md
+docs/
+notes/
+AGENTS.md
+CLAUDE.md
+docs/
+notes/
+
+# demo package: committed on purpose (sample scenes, checkpoints) for demo.py
+!demo_data/**
+# recorded results: final checkpoints, training logs, H1 records, cache manifests (scripts/export_artifacts.py)
+!artifacts/**
+# README figures (PNG copies of the report figures)
+!readme_figures/*.png

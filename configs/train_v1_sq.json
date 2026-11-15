@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "status": "draft",
+  "model": {
+    "arch": "grconv_lite",
+    "c": 24,
+    "n_res": 4,
+    "init": "xavier_uniform gain 1 on Conv2d/ConvTranspose2d weights; default biases and BN"
+  },
+  "loss": {
+    "type": "smooth_l1",
+    "beta": 1.0,
+    "weights": {"q": 1.0, "cos2": 1.0, "sin2": 1.0, "width": 1.0},
+    "q_reduction": "split: sum over void==0 batch pixels / count + sum over void==1 batch pixels / count (pooled)",
+    "aw_reduction": "sum over void==0 batch pixels / count (pooled, not per-image)"
+  },
+  "optim": {"name": "adam", "lr": 0.001, "betas": [0.9, 0.999], "eps": 1e-08, "weight_decay": 0.0},
+  "schedule": {
+    "name": "cosine_per_step",
+    "eta_min": 0.0,
+    "step": "one scheduler step after every optimizer step",
+    "horizon": "epochs * ceil(n_train / batch_size), fixed at run creation"
+  },
+  "batch_size": 32,
+  "drop_last_train": false,
+  "epochs": null,
+  "seeds": [1, 2, 3],
+  "astar_seeds": [1],
+  "effective_holes": {"R": "train", "A0": "train", "M": "train", "Astar": "none"},
+  "flag_setting_train": "deployed",
+  "val_conditions": ["none"],
+  "precision": {
+    "dtype": "float32",
+    "amp": false,
+    "fp32_precision": {"cuda.matmul": "ieee", "cudnn.conv": "ieee"},
+    "deterministic": true,
+    "cudnn_benchmark": false,
+    "cublas_workspace": ":4096:8"
+  },
+  "cache_verify": "full manifest re-hash (train, val) at run creation and at every resume",
+  "selection": "final_epoch",
+  "metric_promotion": "A0 seed 1 final checkpoint, clean val primary top-1 > 0.95 -> strict primary",
+  "overfit": {
+    "n": 20,
+    "slot_seed": 20261112,
+    "model": "A0",
+    "holes": "none",
+    "steps": 1500,
+    "lr": 0.001,
+    "schedule": "constant",
+    "tol": {"q": 0.0002, "cos2": 0.00125, "sin2": 0.00125, "width": 0.0002},
+    "tol_note": "debugging criteria, pooled, smooth-L1 quadratic regime; not convergence guarantees",
+    "acc_slack_scenes": 1
+  }
+}

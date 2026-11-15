@@ -1,0 +1,7 @@
+{
+  "data_root": "/path/to/Jacquard_v2/Extracted",
+  "cache_dir": "/path/to/depth-lies/cache",
+  "runs_dir": "/path/to/depth-lies/runs",
+  "manifest_dir": "/path/to/depth-lies/manifests",
+  "reference_repo": "/path/to/robotic-grasping"
+}

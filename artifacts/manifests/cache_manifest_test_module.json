@@ -1,0 +1,95 @@
+{
+ "version": 1,
+ "splits": [
+  "test_module"
+ ],
+ "n_files": 17,
+ "total_bytes": 3580422487,
+ "files": [
+  {
+   "path": "test_module/COMPLETE",
+   "bytes": 20,
+   "sha256": "661ef01b0fbb0a49d605a10caf6f7cf8720bf954b3e54d32eef24b3b9fee5b3a"
+  },
+  {
+   "path": "test_module/ds.npy",
+   "bytes": 620576896,
+   "sha256": "33a10e31f43c87480f3b4014bfd803be1bb4bf4a954d37bfb901a04f265f3eb4"
+  },
+  {
+   "path": "test_module/ds_comp.npy",
+   "bytes": 620576896,
+   "sha256": "49857cd435c1dac5421cd52be926b4ba3ed224fa8e928aa1416afeb7295bf9f3"
+  },
+  {
+   "path": "test_module/dstar.npy",
+   "bytes": 620576896,
+   "sha256": "76d1e219610bb54bc71a5816a28825809c6a4c259cee3cd1a653b47bc94a44cd"
+  },
+  {
+   "path": "test_module/grasp_offsets.npy",
+   "bytes": 24872,
+   "sha256": "6d68d7fb0407e2328b7a2972c4d75e56693ab709a9aa0ae841f205832a923507"
+  },
+  {
+   "path": "test_module/grasps_1024.npy",
+   "bytes": 11563408,
+   "sha256": "4f4c5bd6632fa86ea3dd25b285fe16b440db137290601f1a5a35cb58fd479eac"
+  },
+  {
+   "path": "test_module/index.csv",
+   "bytes": 514091,
+   "sha256": "f6b341dab87bceaf6a3b37ee1b3526f012271bec320dd6326aea43304e8d8a21"
+  },
+  {
+   "path": "test_module/lie_any_t12.npy",
+   "bytes": 155144320,
+   "sha256": "d4aef9650b7ee204d4fe6306afad17365065d2d6e95e66f4d9356f4b870d6477"
+  },
+  {
+   "path": "test_module/lie_any_t24.npy",
+   "bytes": 155144320,
+   "sha256": "1d9e94aa292d6fb874783cb7ab8097bc33f399df5824235cce00d38fb29295be"
+  },
+  {
+   "path": "test_module/lie_any_t6.npy",
+   "bytes": 155144320,
+   "sha256": "a9283113166f3f6c742a0eea97048fca3eecc2068b816c9f122533876dae445e"
+  },
+  {
+   "path": "test_module/lie_fraction_t12.npy",
+   "bytes": 155144320,
+   "sha256": "c862155e3e0f5f16bd05734e911bffaca4d2a1439dc95a9233d9cfdaceb7ca68"
+  },
+  {
+   "path": "test_module/lie_fraction_t24.npy",
+   "bytes": 155144320,
+   "sha256": "c5092025f8c03a2e65615852a53515aba535fe9dd82b75cc64d345cc4f6fcb8b"
+  },
+  {
+   "path": "test_module/lie_fraction_t6.npy",
+   "bytes": 155144320,
+   "sha256": "32009dce0611f1b04a06750dbacfc1694cf6498b5efb3192500b7da27bf9a729"
+  },
+  {
+   "path": "test_module/m_sensor.npy",
+   "bytes": 155144320,
+   "sha256": "e659fe4d1e7aa4b4008bfb276f2c527abff5e9b63490f4e9a804e9cb9164328a"
+  },
+  {
+   "path": "test_module/obj.npy",
+   "bytes": 155144320,
+   "sha256": "9bb5f390030875af027d59ccb85bf6b1c775937232bc110e0f6281fe20e7f6f5"
+  },
+  {
+   "path": "test_module/rgb.npy",
+   "bytes": 465432704,
+   "sha256": "603780ec6f4e3ca7c02a5f27275de9707465468525ad1531fe5d35676ecabc9b"
+  },
+  {
+   "path": "test_module/summary.json",
+   "bytes": 2144,
+   "sha256": "b6c704c1e36b7c797470b04084aedfb71eda10ffa01b1c5a8e98365963ca0735"
+  }
+ ]
+}
