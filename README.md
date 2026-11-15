@@ -187,7 +187,6 @@ sample scene reproduces the training/evaluation cache bit for bit.
   `Grasp.as_gr` and the Jacquard line loader.
 
 ### Decisions
-- Module 6b (simulated grasp trials) dropped: no simulator access.
 - Small objects at 224 px: crop / size threshold fixed in the Phase 0 audit.
 
 ## 4. Training process
